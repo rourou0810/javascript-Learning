@@ -1,0 +1,4 @@
+var pixel = {
+parse : function() {
+}
+};

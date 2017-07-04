@@ -1,0 +1,38 @@
+(function () {
+	'use strict';
+
+	// TODO add service worker code here
+	if ('serviceWorker' in navigator && 'PushManager' in window) {
+		navigator.serviceWorker
+			.register('/jollychic-sw.js')
+			.then(function (swReg) {
+				console.log('Service Worker is registered');
+				console.log('Service Worker Registered');
+			}).catch(function (error) {
+			console.error('Service Worker Error', error);
+		});
+		window.addEventListener('beforeinstallprompt', function (event) {
+			if (typeof _zyq != 'undefined') {
+				_zyq.push(['trackEvent', 'google_keyboard', 'click', window.JOLLY_USERID]);
+			}
+			event.userChoice.then(function (result) {
+				var outcome = result.outcome;
+
+				if (outcome == 'accepted') {
+					if (typeof _zyq != 'undefined') {
+						_zyq.push(['trackEvent', 'google_keyboard_sure', 'click', window.JOLLY_USERID]);
+					}
+				}
+				if (outcome == 'dismissed') {
+					if (typeof _zyq != 'undefined') {
+						_zyq.push(['trackEvent', 'google_keyboard_cancel', 'click', window.JOLLY_USERID]);
+					}
+				}
+				// 'accepted': add home screen
+				// 'dismissed': cancel
+			});
+		});
+	} else {
+		console.warn('Push messaging is not supported');
+	}
+})();

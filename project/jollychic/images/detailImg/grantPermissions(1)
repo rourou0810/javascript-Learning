@@ -1,0 +1,1 @@
+Pusher.auth_callbacks['1']({"channel_data":"{\"user_id\":\"9309e25ec9064bcc079ab05a89ff1699:visitor1192618412532\",\"user_info\":{\"id\":\"visitor1192618412532\"}}","auth":"d4017a31e31956723ade:57dcd97af55c83fd580e96235cf881c8a102ea44474f372b11690b7d5f010769"});

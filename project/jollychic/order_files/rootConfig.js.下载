@@ -1,0 +1,27 @@
+seajs.config({
+	// 别名配置
+	alias: {
+		'jquery': 'jquery/1.10/jquery',
+		'jquery-debug': 'jquery/1.10/jquery-debug',
+		'zepto': 'zepto/zepto',
+		'zepto-debug': 'zepto/zepto-debug'
+	},
+	// 变量配置
+	vars: {
+		'locale': 'en_US'
+	},
+	map: [
+		function(uri) {
+			if(typeof window.JOLLY_VERSION == "undefined"){
+				return false;
+			}
+			if (/\.(js|css)+/g.test(uri)) {
+				uri += (uri.indexOf('?') === -1 ? ('?' + window.JOLLY_VERSION) : "");
+				return uri;
+			}
+		}
+	],
+	// 文件编码
+	charset: 'utf-8',
+	base: "/asset/scripts/"
+});

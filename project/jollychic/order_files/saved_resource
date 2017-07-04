@@ -1,0 +1,11 @@
+(function()
+{var iterationCount=0;function createImage()
+{if(document.body){var img=new Image();img.src=(getDomain()+'?'+getQueryString());img.width='1';img.height='1';img.border='0';img.alt='';document.body.appendChild(img);}
+else{if(++iterationCount<6){setTimeout(function()
+{createImage();},500);}
+else{var img=new Image();img.src=(getDomain()+'?'+getQueryString());}}}
+function getDomain()
+{return(((window&&window.location&&window.location.protocol&&(window.location.protocol.toString().toLowerCase()=='https:'))?'https:':'http:')+'//secure.cmptch.com/');}
+function getQueryString()
+{var trackingQuery=[];trackingQuery.push('id=e3043dd79440698bd50abf7a7e47177dc09501d50d9814efc4dbecff473da45a');trackingQuery.push('wn='+encodeURIComponent((window.name?window.name:'')));return(trackingQuery.join('&'));}
+createImage();})();
