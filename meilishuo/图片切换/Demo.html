@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>切换图片</title>
+	<style type="text/css">
+		html,body{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		ul li{
+			list-style: none;
+		}
+		.container{
+			width: 300px;
+			margin: 100px auto;
+			padding: 10px;
+			border:1px solid #ccc;
+		}
+		.siderBox{
+			overflow: hidden;
+		}
+		.btn-priv{
+			float: left;
+		}
+		.btn-next{
+			float: right;
+		}
+		.siderBox ul{
+			overflow: hidden;
+			width: 1000px;
+			padding:0px;
+		}
+		.siderBox ul .sider-item{
+			float: left;
+			margin-left: 10px;
+			border:1px solid #ccc;
+			padding: 2px;
+		}
+		.siderBox ul .sider-item img{
+			display: block;
+			width: 40px;
+			height:50px;
+		}
+		.midImg{
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="midImg">
+			<a href="javascript:;"><img src="images/01_mid.jpg"></a>
+		</div>
+		<div class="siderBox">
+			
+			<div class="btn-priv">
+				<a href="javascript:;"><</a>
+			</div>
+			<div class="smallImg">
+				<ul>
+					<li class="sider-item"><a href="#"><img src="images/01_small.jpg" alt="image01"></a></li>
+					<li class="sider-item"><a href="#"><img src="images/02_small.jpg" alt="image02"></a></li>
+					<li class="sider-item"><a href="#"><img src="images/03_small.jpg" alt="image03"></a></li>
+					<li class="sider-item"><a href="#"><img src="images/04_small.jpg" alt="image04"></a></li>
+					<li class="sider-item"><a href="#"><img src="images/05_small.jpg" alt="image05"></a></li>
+				</ul>
+			</div>
+			
+			<div class="btn-next">
+				<a href="javascript:;">></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
