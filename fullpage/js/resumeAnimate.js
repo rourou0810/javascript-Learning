@@ -22,6 +22,7 @@
         anchors:['home', 'abouts', 'services','news','clients','contacts'],
         menu: '#menuList',
         scrollBar:true,
+        touchSensitivity:1,
         afterRender: function(anchorLink, index){
             wow = new WOW({
                   animateClass: 'animated',

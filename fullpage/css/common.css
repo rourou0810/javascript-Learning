@@ -147,7 +147,7 @@ a:hover{
 
 /*service*/
 .services-content,.news-content{
-    padding:150px 0px;
+    padding-top:150px;
     text-align: center;
     height: 100%;
 }
@@ -166,13 +166,12 @@ a:hover{
     color: #f3f3f3;
 }
 .content-container{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 .services-icon{
-    height: 160px;
     margin-bottom: 20px;
 }
-.services-icon.icon-home{
+/*.services-icon.icon-home{
     background: url(../images/service_home.png) no-repeat center center;
 }
 .services-icon.icon-network{
@@ -183,19 +182,26 @@ a:hover{
 }
 .services-icon.icon-hotel{
     background: url(../images/service_hotel.png) no-repeat center center;
+}*/
+.services-item img{
+    width: 80px;
+    height: 80px;
+}
+.services-item h3{
+    font-size: 18px;
 }
 .content-container .col-xs-12{
-    margin-bottom:70px;
     padding:30px 0;
 }
 .services-item p {
+    margin:0 20px;
     position: absolute;
     box-sizing: border-box;
     padding: 30px;
     display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    top: -35px;
     transform: scale(0);
     background-color: rgba(250,158,0,.85);
     color: #333;
@@ -456,7 +462,7 @@ a:hover{
 }
 @media (max-width: 790px){
     .navbar-default .navbar-nav > li > a {
-        font-size: 14px;
+        font-size: 12px;
     }
     .navbar-brand img{
         height: 30px;
@@ -466,6 +472,9 @@ a:hover{
     }
     .backtip{
         padding-top: 50%;
+    }
+    .content-title{
+        font-size: 24px;
     }
 }
 
@@ -498,6 +507,44 @@ a:hover{
         padding:0;
         line-height: 20px;
         letter-spacing: 1px;
+    }
+    .content-container{
+        padding-top: 0px;
+    }
+    .content-title{
+        font-size: 18px;
+    }
+    .content-title p span:last-child,.services-item p>span{
+        font-size: 14px;
+    }
+    .services-content, .news-content{
+        padding-top:120px;
+    }
+    .services-item img{
+        width: 50px;
+        height: 50px;
+    }
+    .services-item h3{
+        font-size: 12px;
+    }
+    .content-container .col-xs-12{
+        padding:5px 0;
+    }
+    .services-item p{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .services-item p>a{
+        margin-top: 0px;
+    }
+    .services-item p>span{
+        margin-bottom: 5px;
+    }
+    .common-btn, .common-btn-white{
+        width: 50px;
+    }
+    .common-btn>i, .common-btn-white>i{
+        font-size: 16px;
     }
 
 }
