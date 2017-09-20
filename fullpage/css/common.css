@@ -1,8 +1,10 @@
 html {
     -ms-overflow-style:none;
     overflow:-moz-scrollbars-none;
+    overflow: hidden;
 }
 html::-webkit-scrollbar{width:0px}
+
 
 body{
     font-size: 14px;
@@ -10,6 +12,7 @@ body{
     color: #fff;
     font-family: 'Microsoft YaHei','YaHei WebFont',Verdana,Geneva,Tahoma,sans-serif,'宋体';
 }
+
 a:hover{
     text-decoration: none;
     color: #333;
@@ -514,9 +517,9 @@ a:hover{
     .navbar-toggle{
         margin-top: 17px;
     }
-    .backtip{
+    /*.backtip{
         padding-top: 50%;
-    }
+    }*/
     .content-title{
         font-size: 24px;
     }
@@ -565,6 +568,12 @@ a:hover{
     .home-logo img{
         width: 100px;
     }
+    .backtip{
+        padding-top: 45%;
+    }
+    .abouts .container{
+        padding-top: 0px;
+    }
     .title-text .title-china{
         font-size: 18px;
         letter-spacing: 2px;
@@ -600,8 +609,11 @@ a:hover{
     .content-title p span:last-child,.services-item p>span{
         font-size: 14px;
     }
-    .services-content, .news-content{
-        padding-top:100px;
+    .news-content{
+        padding-top:60px;
+    }
+    .services-content,.contacts .news-content{
+        padding-top: 80px;
     }
     .services-item img{
         width: 50px;
@@ -695,6 +707,9 @@ a:hover{
         padding: 8px 0;
         margin-bottom: 5px;
     }
+    .btn.email-btn{
+        margin-right: 0px;
+    }
     .contact-item-2{
         padding-left: 15px;
     }
@@ -718,15 +733,15 @@ a:hover{
         margin-top: 85px;
         font-size: 12px;
     }
-    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 50px;
+    .news .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 30px;
     }
 
 }
 
 @media (min-width: 375px) and (max-width: 700px) {
     .title-text .title-china{
-        margin-top: 70px;
+        margin-top: 20px;
     }
     .content-container .col-xs-12{
         padding: 5% 0;
@@ -758,6 +773,6 @@ a:hover{
         padding-left: 35px;
     }
     .footer{
-        margin-top: 150px;
+        margin-top: 110px;
     }
 }

@@ -15,21 +15,47 @@
     }
     section();
 
-    $('#dowebok').fullpage({
-        sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent','transparent', 'transparent'],
-        //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-        //paddingTop: '114px',
-        anchors:['home', 'abouts', 'services','news','clients','contacts'],
-        menu: '#menuList',
-        scrollBar:true,
-        touchSensitivity:1,
-        afterRender: function(anchorLink, index){
-            wow = new WOW({
-                  animateClass: 'animated',
-              });
-             wow.init();
+
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
         }
-    });
+        return flag;
+    }
+
+    
+        $('#dowebok').fullpage({
+            sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent','transparent', 'transparent'],
+            //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            //paddingTop: '68px',
+            anchors:['home', 'abouts', 'services','news','clients','contacts'],
+            menu: '#menuList',
+            scrollBar:true,
+            css3:true,
+            autoScrolling:true,
+            touchSensitivity:1,
+            scrollOverflow:false,
+            afterRender: function(anchorLink, index){
+                wow = new WOW({
+                      animateClass: 'animated',
+                      mobile: true
+                  });
+                 wow.init();
+            }
+        });
+    
+
+    
+
+
 
     $(".news-item").hover(
         function () {

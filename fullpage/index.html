@@ -3,7 +3,7 @@
 <head>
     <title>首页</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -40,12 +40,12 @@
             </div>
         </nav>
         <div class="content">
-            <div id="dowebok">
-                <div class="section home active" style="padding-top: 80px;">
+            <div id="dowebok" class="wp-inner">
+                <div class="section home active page page1" style="padding-top: 80px;">
                     <div class="container">
                         <div class="home-content">
-                            <div class="home-logo">
-                                <img src="images/logo_01.png" alt="美庐企业" width="230" class="wow flipInY" data-wow-delay="0.3s">
+                            <div class="home-logo rotateIn animated" data-wow-delay="0.3s">
+                                <img src="images/logo_01.png" alt="美庐企业" width="230">
                             </div>
                             <div class="title-text wow bounceInUp" data-wow-delay="0.6s">
                                 <p class="title-china">陕西美庐企业管理有限公司</p>
@@ -54,7 +54,7 @@
                         </div>
                     </div>           
                 </div>
-                <div class="section abouts">
+                <div class="section abouts page page2">
                     <div class="swiper-container swiper-container1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slider1">
@@ -62,9 +62,9 @@
                                     <div class="slider-content title-text">
                                     
                                         <div class="container">
-                                            <p class="ani title-china about-title wow fadeInLeft" data-wow-delay="0.3s" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">快速的服务响应 · 便捷的用户支持渠道</p>
-                                            <p class="ani title-english wow fadeInLeft" data-wow-delay="0.3s" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">FAST&nbsp;&nbsp;RESPONSE&nbsp;&nbsp;AND&nbsp;&nbsp;CONVENIENT&nbsp;&nbsp;USER&nbsp;&nbsp;CHANNEL</p>
-                                            <div class="ani text-detail wow fadeInRight" data-wow-delay="0.6s" swiper-animate-effect="fadeInRight" swiper-animate-delay="0.6s">
+                                            <p class="title-china about-title wow fadeInLeft ani"  data-wow-delay="0.3s" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">快速的服务响应 · 便捷的用户支持渠道</p>
+                                            <p class="title-english wow fadeInLeft ani" data-wow-delay="0.3s" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">FAST&nbsp;&nbsp;RESPONSE&nbsp;&nbsp;AND&nbsp;&nbsp;CONVENIENT&nbsp;&nbsp;USER&nbsp;&nbsp;CHANNEL</p>
+                                            <div class="text-detail wow fadeInRight ani" data-wow-delay="0.6s" swiper-animate-effect="fadeInRight" swiper-animate-delay="0.6s">
                                                 我们将提供给用户一份详细的技术咨询联系方式，客户可以随时通过电话传真、书函以及电子邮件等各种灵活的通讯手段进行技术咨询
                                             </div>
                                         </div>  
@@ -105,19 +105,20 @@
                     </div>
                         
                 </div>
-                <div class="section services">
+                <div class="section services page page3">
                     <div class="container" style="height: 100%;">
                         <div class="services-content">
                             <div class="content-title">
-                                <p><span>WHAT</span>WE&nbsp;&nbsp;DO<span>主营业务</span></p>
+                                <p class="wow bounceIn"><span>WHAT</span>WE&nbsp;&nbsp;DO<span>主营业务</span></p>
                             </div>
                             <div class="content-container row">
                                 <div class="col-xs-12 col-sm-6 col-md-3">
                                     <div class="services-item">
-                                        <div class="services-icon icon-home">
+                                        <div class="services-icon icon-home wow bounceIn" data-wow-delay="0.4s">
                                             <img src="images/service_home.png">
+                                            <h3>房地产开发</h3>
                                         </div>
-                                        <h3>房地产开发</h3>
+                                        
                                         <p><span>房地产开发</span>
                                         专业从事豪宅室内装饰、改建、软装以及园林配套的一站式服务机构， 专注为全国顶级大宅、顶级豪宅、及明星名流居所提供点此进入介绍区。
                                         <a href="#" target="_blank" class="common-btn"><i class="ion-ios-arrow-right"></i></a></p> 
@@ -125,28 +126,31 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3">
                                     <div class="services-item">
-                                        <div class="services-icon icon-network">
+                                        <div class="services-icon icon-network wow bounceIn" data-wow-delay="0.4s">
                                             <img src="images/service_network.png">
+                                            <h3>网络科技</h3> 
                                         </div>
-                                        <h3>网络科技</h3> 
+                                        
                                         <p><span>网络科技</span>专业从事豪宅室内装饰、改建、软装以及园林配套的一站式服务机构， 专注为全国顶级大宅、顶级豪宅、及明星名流居所提供点此进入介绍区。<a href="#" target="_blank" class="common-btn"><i class="ion-ios-arrow-right"></i></a></p>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3">
                                     <div class="services-item">
-                                        <div class="services-icon icon-bussiess">
+                                        <div class="services-icon icon-bussiess wow bounceIn" data-wow-delay="0.4s">
                                             <img src="images/service_bussiess.png">
+                                            <h3>商业运营</h3>
                                         </div>
-                                        <h3>商业运营</h3>
+                                        
                                         <p><span>商业运营</span>专业从事豪宅室内装饰、改建、软装以及园林配套的一站式服务机构， 专注为全国顶级大宅、顶级豪宅、及明星名流居所提供点此进入介绍区。<a href="#" target="_blank" class="common-btn"><i class="ion-ios-arrow-right"></i></a></p>
                                     </div> 
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3">
                                     <div class="services-item">
-                                        <div class="services-icon icon-hotel">
+                                        <div class="services-icon icon-hotel wow bounceIn" data-wow-delay="0.4s">
                                             <img src="images/service_hotel.png">
+                                            <h3>酒店经营</h3>
                                         </div>
-                                        <h3>酒店经营</h3> 
+                                         
                                         <p><span>酒店经营</span>专业从事豪宅室内装饰、改建、软装以及园林配套的一站式服务机构， 专注为全国顶级大宅、顶级豪宅、及明星名流居所提供点此进入介绍区。<a href="#" target="_blank" class="common-btn"><i class="ion-ios-arrow-right"></i></a></p>
                                     </div>
                                 </div>
@@ -155,11 +159,11 @@
                     </div>
                 </div>
 
-                <div class="section news">
+                <div class="section news page page4">
                    
                     <div class="news-content swiper-container swiper-container2">
                         <div class="content-title">
-                            <p><span>NEWS</span>CENTER<span>新闻中心</span></p>
+                            <p class="wow bounceIn"><span>NEWS</span>CENTER<span>新闻中心</span></p>
                         </div>
                         <div class="swiper-wrapper news-content-container">
                             <div class="swiper-slide slider1">
@@ -228,61 +232,61 @@
                     </div>
                 </div>
 
-                <div class="section clients">
+                <div class="section clients page page5">
                     <div class="news-content">
                         <div class="content-title">
-                            <p><span>OUR</span>PARTNERS<span>合作伙伴</span></p>
+                            <p class="wow bounceIn"><span>OUR</span>PARTNERS<span>合作伙伴</span></p>
                         </div>
                         <div class="clients-content-container">
                             <div class="container">
                                 <div class="clients-item  row">
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_01.jpg">
                                         <p>绿地集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_02.jpg">
                                         <p>恒大集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_03.jpg">
                                         <p>远洋地产</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_04.jpg">
                                         <p>格力地产</p>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_01.jpg">
                                         <p>绿地集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_02.jpg">
                                         <p>恒大集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_03.jpg">
                                         <p>远洋地产</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_04.jpg">
                                         <p>格力地产</p>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_01.jpg">
                                         <p>绿地集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_02.jpg">
                                         <p>恒大集团</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_03.jpg">
                                         <p>远洋地产</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item">
+                                    <div class="col-xs-12 col-sm-4 col-md-3 logo-item wow flipInY">
                                         <img src="images/logos/logo_04.jpg">
                                         <p>格力地产</p>
                                     </div>
@@ -294,15 +298,15 @@
                     </div>
                 </div>
 
-                <div class="section contacts">
+                <div class="section contacts page page6">
                     <div class="news-content">
                         <div class="content-title">
-                            <p><span>CONTACTR</span>US<span>联系我们</span></p>
+                            <p class="wow bounceIn"><span>CONTACTR</span>US<span>联系我们</span></p>
                         </div>
                         <div class="clients-content-container">
                             <div class="container">
                                 <div class="row contact-item">
-                                    <div class="col-xs-12 col-sm-12 col-md-4 contact-item-1">
+                                    <div class="col-xs-12 col-sm-12 col-md-4 contact-item-1 wow flipInX">
                                         <img src="images/logo.png">
                                         <div class="contant-name">
                                             <i class="ion-ios-at-outline"></i>
@@ -322,7 +326,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-6 col-sm-6 col-md-4 contact-item-1 contact-item-2">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 contact-item-1 contact-item-2 wow flipInX">
                                         <div class="circle-one">
                                             <div class="circle-two">
                                                 <img src="images/weixin.jpg">
@@ -330,7 +334,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-6 col-sm-6 col-md-4 contact-item-1 contact-item-2">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 contact-item-1 contact-item-2 wow flipInX">
                                         <div class="circle-one">
                                             <div class="circle-two">
                                                 <img src="images/weixin.jpg">
@@ -361,26 +365,37 @@
         autoplay: 8000,//可选选项，自动滑动
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
-        pagination : '.swiper-p1',
+        pagination : '.swiper-container1 .swiper-p1',
+        lazyLoading: true,
         paginationClickable :true,
         autoplayDisableOnInteraction : false,
-        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-            swiperAnimateCache(swiper); //隐藏动画元素 
-            swiperAnimate(swiper); //初始化完成开始动画
+        onInit: function(mySwiper1){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(mySwiper1); //隐藏动画元素 
+            swiperAnimate(mySwiper1); //初始化完成开始动画
         },
-        onSlideChangeEnd: function(swiper){ 
-            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        onSlideChangeEnd: function(mySwiper1){ 
+            swiperAnimate(mySwiper1); //每个slide切换结束时也运行当前slide动画
         } 
     })
 
-    var mySwiper2 = new Swiper('.swiper-container2', {
+    var mySwiper2 = new Swiper('.news .swiper-container2', {
         autoplay: 8000,//可选选项，自动滑动
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
-        pagination : '.swiper-p2',
+        pagination : '.news .swiper-p2',
+        lazyLoading: true,
         paginationClickable :true,
         autoplayDisableOnInteraction : false
+        // onInit: function(mySwiper2){ //Swiper2.x的初始化是onFirstInit
+        //     swiperAnimateCache(mySwiper2); //隐藏动画元素 
+        //     swiperAnimate(mySwiper2); //初始化完成开始动画
+        // },
+        // onSlideChangeEnd: function(mySwiper2){ 
+        //     swiperAnimate(mySwiper2); //每个slide切换结束时也运行当前slide动画
+        // }
+
     })
+    
 
 </script>
 </body>
