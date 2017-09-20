@@ -459,6 +459,42 @@ a:hover{
 .fp-tableCell{
     height: 100% !important;
 }
+@media (max-width: 1660px){
+    .content-container{
+        padding-top: 15%;
+    }
+    .news-content-container, .clients-content-container{
+        padding-top: 5%;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1360px){
+    .content-container{
+        padding-top: 10%;
+    }
+    .news-content-container, .clients-content-container{
+        padding-top: 3%;
+    }
+    .contacts .container{
+        padding-top: 50px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1280px) {
+    .content-container{
+        padding-top: 20%;
+    }
+    .abouts .container{
+        padding-top: 10%;
+    }
+    .news-content-container, .clients-content-container{
+        padding-top: 12%;
+    }
+    .footer{
+        margin-top: 180px;
+    }
+}
 @media (max-width: 998px){
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
         margin-right: 25px;
@@ -681,6 +717,9 @@ a:hover{
     .footer {
         margin-top: 85px;
         font-size: 12px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 50px;
     }
 
 }
