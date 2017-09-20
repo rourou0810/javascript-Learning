@@ -270,6 +270,10 @@ a:hover{
 .news-text{
     font-size: 14px;
     line-height: 22px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .news-item a.common-btn-white{
     margin-top:50px;
@@ -296,6 +300,7 @@ a:hover{
 
 
 /*contacts*/
+
 .section .news-content{
     padding-bottom: 0px;
 }
@@ -311,6 +316,9 @@ a:hover{
 }
 .contact-item-1 div{
     margin-bottom: 10px;
+}
+.contact-item-2 {
+    padding-left: 100px;
 }
 .contant-btns{
     margin-top: 30px;
@@ -361,23 +369,14 @@ a:hover{
 
 
 
-@media (max-width: 992px) {
-    .clients-item .logo-item p{
-        display: block;
-    }
-    .clients-item .logo-item img{
-        display: none;
-    }
+
+.clients-item .logo-item p{
+    display: none;
+}
+.clients-item .logo-item img{
+    display: block;
 }
 
-@media (min-width: 992px) {
-    .clients-item .logo-item p{
-        display: none;
-    }
-    .clients-item .logo-item img{
-        display: block;
-    }
-}
 
 
 
@@ -491,6 +490,39 @@ a:hover{
     .content-title p span:last-child{
         font-size: 18px;
     }
+    .abouts .text-detail{
+        padding: 50px 65px 20px;
+    }
+    .news-content-container{
+        padding-top: 0px;
+    }
+    .news-item a.common-btn-white{
+        margin-top: 30px;
+    }
+    .clients-content-container{
+        margin-top: 50px;
+    }
+    .clients-item .logo-item img{
+        margin: 20px 0;
+    }
+    .contacts .clients-content-container{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .contacts .container{
+        padding-top: 50px;
+    }
+    .contact-item-1{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .contact-item-2{
+        padding-left: 85px;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 10px 135px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -559,11 +591,96 @@ a:hover{
     .services-item p>span{
         margin-bottom: 5px;
     }
+
     .common-btn, .common-btn-white{
         width: 50px;
     }
     .common-btn>i, .common-btn-white>i{
         font-size: 16px;
+    }
+    .news-content-container, .clients-content-container{
+        padding-top: 0px;
+    }
+    .news-time{
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom:15px;
+    }
+    .news-time>span{
+        font-size: 14px;
+    }
+    .news-title{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .news-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .news-item a.common-btn-white{
+        margin-top: 0px;
+    }
+    .news-text{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+    .common-btn>i, .common-btn-white>i{
+        font-size: 12px;
+    }
+    .clients-item .logo-item img{
+        display: none;
+    }
+    .clients-item .logo-item p{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .contacts .container {
+        padding-top: 10px;
+    }
+    .contact-item-1{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .contact-item-1 img{
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    .contact-item-1 div{
+        margin-bottom: 5px;
+    }
+    .contant-btns{
+        margin-top: 10px;
+    }
+    .btn{
+        font-size: 12px;
+        width: 100%;
+        padding: 8px 0;
+        margin-bottom: 5px;
+    }
+    .contact-item-2{
+        padding-left: 15px;
+    }
+    .circle-one{
+        width: 70px;
+        height: 70px;
+    }
+    .contact-item-2 .circle-two img{
+        width: 70px;
+        height: 70px;
+        left: 20px;
+        top: 20px;
+    }
+    .circle-two{
+        width: 110px;
+        height: 110px;
+        left: 15px;
+        top: 15px;
+    }
+    .footer {
+        margin-top: 85px;
+        font-size: 12px;
     }
 
 }
@@ -574,5 +691,34 @@ a:hover{
     }
     .content-container .col-xs-12{
         padding: 5% 0;
+    }
+    .services-item p{
+        top: -5px;
+    }
+    .news-text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: clip;
+        white-space: normal;
+    }
+    .news-time{
+        margin-top: 30px;
+    }
+    .clients-item .logo-item p{
+        margin-bottom: 15px;
+    }
+    .contacts .clients-content-container{
+        margin-top: 30px;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+    .contact-item-2{
+        padding-left: 35px;
+    }
+    .footer{
+        margin-top: 150px;
     }
 }
