@@ -32,7 +32,7 @@
     }
 
     
-        
+    var mySwiper1;  
     if(!IsPC()) {
         $('.scroll-down').show();
     }
@@ -59,6 +59,24 @@
                 $('.home-logo .text2').addClass('bounceInRight animated');
                 $('.home .title-text').addClass('bounceInUp animated');
             }
+            if(index == 2) {
+                mySwiper1 = new Swiper('.abouts .swiper-container1', {
+                    autoplay: 10000,//可选选项，自动滑动
+                    prevButton:'.swiper-button-prev',
+                    nextButton:'.swiper-button-next',
+                    pagination : '.abouts .swiper-p1',
+                    lazyLoading: true,
+                    paginationClickable :true,
+                    autoplayDisableOnInteraction : false,
+                    onInit: function(mySwiper1){ //Swiper2.x的初始化是onFirstInit
+                        swiperAnimateCache(mySwiper1); //隐藏动画元素 
+                        swiperAnimate(mySwiper1); //初始化完成开始动画
+                    },
+                    onSlideChangeEnd: function(mySwiper1){ 
+                        swiperAnimate(mySwiper1); //每个slide切换结束时也运行当前slide动画
+                    }
+                })
+            }
             if(index == 3) {
                 $('.services .content-title p').addClass('bounceIn opacityShow animated');
                 $('.services .services-icon').addClass('bounceIn opacityShow animated');
@@ -82,6 +100,9 @@
                 $('.home-logo .text1').removeClass('bounceInLeft animated');
                 $('.home-logo .text2').removeClass('bounceInRight animated');
                 $('.home .title-text').removeClass('bounceInUp animated');
+            }
+            if(index == 2) {
+                mySwiper1.destroy(false); 
             }
             if(index == 3) {
                 $('.services .content-title p').removeClass('bounceIn opacityShow animated');

@@ -68,14 +68,13 @@
                             <div class="swiper-slide slider1">
                                 <div class="backtip">
                                     <div class="slider-content title-text">
-                                    
                                         <div class="container">
-                                            <p class="ani title-china about-title" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">快速的服务响应 · 便捷的用户支持渠道</p>
-                                            <p class="title-english ani opacityHide" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">FAST&nbsp;&nbsp;RESPONSE&nbsp;&nbsp;AND&nbsp;&nbsp;CONVENIENT&nbsp;&nbsp;USER&nbsp;&nbsp;CHANNEL</p>
-                                            <div class="text-detail ani opacityHide" swiper-animate-effect="fadeInRight" swiper-animate-delay="0.6s">
+                                            <p class="ani title-china about-title opacityHide" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">快速的服务响应 · 便捷的用户支持渠道</p>
+                                            <p class="ani title-english opacityHide" swiper-animate-effect="fadeInLeft" swiper-animate-delay="0.3s">FAST&nbsp;&nbsp;RESPONSE&nbsp;&nbsp;AND&nbsp;&nbsp;CONVENIENT&nbsp;&nbsp;USER&nbsp;&nbsp;CHANNEL</p>
+                                            <div class="ani text-detail opacityHide" swiper-animate-effect="fadeInRight" swiper-animate-delay="0.6s">
                                                 我们将提供给用户一份详细的技术咨询联系方式，客户可以随时通过电话传真、书函以及电子邮件等各种灵活的通讯手段进行技术咨询
                                             </div>
-                                        </div>  
+                                        </div>                                  
                                     </div>
                                                                       
                                 </div>
@@ -387,22 +386,7 @@
 <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
 <script type="text/javascript" src="js/resumeAnimate.js"></script>
 <script type="text/javascript">
-    var mySwiper1 = new Swiper('.abouts .swiper-container1', {
-            autoplay: 10000,//可选选项，自动滑动
-            prevButton:'.swiper-button-prev',
-            nextButton:'.swiper-button-next',
-            pagination : '.abouts .swiper-p1',
-            lazyLoading: true,
-            paginationClickable :true,
-            autoplayDisableOnInteraction : false,
-            onInit: function(mySwiper1){ //Swiper2.x的初始化是onFirstInit
-                swiperAnimateCache(mySwiper1); //隐藏动画元素 
-                swiperAnimate(mySwiper1); //初始化完成开始动画
-            },
-            onSlideChangeEnd: function(mySwiper1){ 
-                swiperAnimate(mySwiper1); //每个slide切换结束时也运行当前slide动画
-            } 
-        })
+
      
 
     var mySwiper2 = new Swiper('.news .swiper-container2', {
