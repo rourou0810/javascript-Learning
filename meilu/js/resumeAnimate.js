@@ -1,5 +1,21 @@
   $(function(){
 
+    var total=100;
+    var breaker=50;
+    var turn=100/(total/breaker);
+    var progress=0;
+    var timer = setInterval(function(){
+        progress=progress+turn;
+        $(".sr-only").html(progress+"% 完成");
+        $("#prog").attr("style", "width:"+progress+"%");
+        if (progress>=100) {
+            clearInterval(timer);
+
+            $('#loading').addClass('isCompleted');
+            
+            alreadyLoad();
+        }
+    }, breaker);
     
 
     function section(){
@@ -31,8 +47,8 @@
         return flag;
     }
 
-    
-    var mySwiper1;  
+    function alreadyLoad() {
+        var mySwiper1;  
     if(!IsPC()) {
         $('.scroll-down').show();
     }
@@ -47,17 +63,15 @@
             //       animateClass: 'animated',
             //   });
             //  wow.init();
-            $('.home-logo img').addClass('zoomIn animated');
-            $('.home-logo .text1').addClass('bounceInLeft animated');
-            $('.home-logo .text2').addClass('bounceInRight animated');
-            $('.home .title-text').addClass('bounceInUp animated');
+            $('.home-logo img').addClass('zoomIn opacityShow animated');
+            $('.home-logo .text2').addClass('bounceInLeft opacityShow animated');
+            $('.home .title-text').addClass('bounceInRight opacityShow animated');
         },
         afterLoad:function(anchorLink, index) {
             if(index == 1) {
-                $('.home-logo img').addClass('zoomIn animated');
-                $('.home-logo .text1').addClass('bounceInLeft animated');
-                $('.home-logo .text2').addClass('bounceInRight animated');
-                $('.home .title-text').addClass('bounceInUp animated');
+                $('.home-logo img').addClass('zoomIn opacityShow animated');
+                $('.home-logo .text2').addClass('bounceInLeft opacityShow animated');
+                $('.home .title-text').addClass('bounceInRight opacityShow animated');
             }
             if(index == 2) {
                 mySwiper1 = new Swiper('.abouts .swiper-container1', {
@@ -95,11 +109,10 @@
             }
         },
         onLeave:function(index,nextIndex,direction){
-            if(index == 1) {
-                $('.home-logo img').removeClass('zoomIn animated');
-                $('.home-logo .text1').removeClass('bounceInLeft animated');
-                $('.home-logo .text2').removeClass('bounceInRight animated');
-                $('.home .title-text').removeClass('bounceInUp animated');
+            /*if(index == 1) {
+                $('.home-logo img').removeClass('zoomIn opacityShow animated');
+                $('.home-logo .text2').removeClass('bounceInLeft opacityShow animated');
+                $('.home .title-text').removeClass('bounceInRight opacityShow animated');
             }
             if(index == 2) {
                 mySwiper1.destroy(false); 
@@ -119,7 +132,7 @@
             if(index == 6) {
                 $('.contacts .content-title p').removeClass('bounceIn opacityShow animated');
                 $('.contacts .contact-item-1').removeClass('flipInX opacityShow animated');
-            }
+            }*/
         }
     });
 
@@ -136,4 +149,7 @@
             $(this).find('.common-btn-white').removeClass("common-btn-yellow");
         }
     );
+    }
+    
+    
 });
