@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我是首页</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/default.css">
+</head>
+<body>
+	<!-- 使用ejs语法输出变量 -->
+	<%	//起始符号
+
+		//解释JS的解析环境
+		console.log(title);
+
+		//结束符号
+	%>	
+
+	<h3>我是首页--<%= title %></h3>
+
+	<ul>
+		<li>姓名：<%= user.username %></li>
+		<li>性别：<%= user.sex %></li>
+		<li>爱好：<%= user.like %></li>
+	</ul>
+</body>
+</html>
